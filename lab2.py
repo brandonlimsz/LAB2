@@ -37,8 +37,8 @@ def calc_median_temperature(floatlist):
     print("calc_median_temperature")
     sort_temperature(floatlist)
     print(floatlist)
-    if len(floatlist)%2 ==0:
-        print("median: ",float((floatlist[int(len(floatlist)/2)]+floatlist[int(len(floatlist)/2-1)])/2) )
+    if len(floatlist)%2 ==0:       
+        print("median: ",(float(floatlist[len(floatlist)//2-1])+float(floatlist[len(floatlist)//2]))/2)
     else:
         print("median: ",floatlist[int(len(floatlist)/2)])
 
