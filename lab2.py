@@ -28,11 +28,19 @@ def find_min_max(stringlist):
     min_max.append(max(floatlist))
     print('The minimum and maximum are respectivley, ',min_max)
 
-def sort_temperature():
+def sort_temperature(floatlist):
     print("sort_temperature")
+    aranged_list=floatlist.sort()
+    return aranged_list
 
-def calc_median_temperature():
+def calc_median_temperature(floatlist):
     print("calc_median_temperature")
+    sort_temperature(floatlist)
+    print(floatlist)
+    if len(floatlist)%2 ==0:
+        print("median: ",float((floatlist[int(len(floatlist)/2)]+floatlist[int(len(floatlist)/2-1)])/2) )
+    else:
+        print("median: ",floatlist[int(len(floatlist)/2)])
 
 def main():
     print("Ex3")
@@ -40,5 +48,6 @@ def main():
     temp_list =get_user_input()
     calc_average(temp_list)
     find_min_max(temp_list)
+    calc_median_temperature(temp_list)
 
 main()
