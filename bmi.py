@@ -2,7 +2,7 @@ def calculate_bmi(height, weight):
     print("height="+str(height))
     print("weight="+str(weight))
     bmi= weight/(height**2)
-    print("bmi=",round(bmi,2))
+    print("bmi= ",round(bmi,2))
 
     if bmi<18.5:
         print("Under weight")
@@ -13,4 +13,11 @@ def calculate_bmi(height, weight):
     else:
         print("Nomral weight")
         return 0
-calculate_bmi(1.73, 57)
+
+print("------------------------------------")
+calculate_bmi(1.73, 37) 
+print("------------------------------------")
+calculate_bmi(1.73, 35)
+print("------------------------------------")
+calculate_bmi(1.73, 97)
+print("------------------------------------")
